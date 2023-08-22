@@ -6,15 +6,11 @@ import com.thejackfolio.microservices.youtubeapi.exceptions.VideoIdException;
 import com.thejackfolio.microservices.youtubeapi.models.YouTubeResponse;
 import com.thejackfolio.microservices.youtubeapi.servicehelpers.IncomingValidation;
 import com.thejackfolio.microservices.youtubeapi.servicehelpers.YouTubeServiceHelper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class YouTubeService {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(YouTubeService.class);
 
     @Autowired
     private IncomingValidation validation;

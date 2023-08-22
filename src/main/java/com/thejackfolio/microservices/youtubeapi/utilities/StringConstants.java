@@ -9,6 +9,9 @@ public class StringConstants {
     public static final String KEY = "KEY";
 
     public static final String REQUEST_PROCESSED = "Request Processed";
+    public static final String BAD_REQUEST_YOUTUBE = "Bad request to YouTube API";
+    public static final String VIDEO_ID_NULL = "VideoId is null in response";
+    public static final String THUMBNAIL_URL_NULL = "Thumbnail URL is null in response";
 
     private StringConstants(){}
 }

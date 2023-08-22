@@ -4,6 +4,7 @@ import com.thejackfolio.microservices.youtubeapi.exceptions.ThumbnailUrlExceptio
 import com.thejackfolio.microservices.youtubeapi.exceptions.VideoIdException;
 import com.thejackfolio.microservices.youtubeapi.models.Item;
 import com.thejackfolio.microservices.youtubeapi.models.YouTubeResponse;
+import com.thejackfolio.microservices.youtubeapi.utilities.StringConstants;
 import org.apache.logging.log4j.util.Strings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,11 +22,11 @@ public class IncomingValidation {
             for(Item item : youTubeResponse.getItems()){
                 if(Strings.isEmpty(item.getId().getVideoId()) || Strings.isBlank(item.getId().getVideoId())){
                     LOGGER.info("VideoId is null in response item:{}", item);
-                    throw new VideoIdException("VideoId is null in response");
+                    throw new VideoIdException(StringConstants.VIDEO_ID_NULL);
                 }
                 if(Strings.isEmpty(item.getSnippet().getThumbnails().getHigh().getUrl()) || Strings.isBlank(item.getSnippet().getThumbnails().getHigh().getUrl())){
                     LOGGER.info("Thumbnail URL is null in response item:{}", item);
-                    throw new ThumbnailUrlException("Thumbnail URL is null in response");
+                    throw new ThumbnailUrlException(StringConstants.THUMBNAIL_URL_NULL);
                 }
             }
         }
