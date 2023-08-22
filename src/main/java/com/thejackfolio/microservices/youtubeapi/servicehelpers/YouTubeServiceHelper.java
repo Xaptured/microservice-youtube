@@ -28,8 +28,8 @@ public class YouTubeServiceHelper {
                                                     PropertiesReader.getProperty(StringConstants.ORDER),
                                                     PropertiesReader.getProperty(StringConstants.KEY));
         } catch (Exception exception){
-            LOGGER.info("Bad request to YouTube API", exception);
-            throw new ResponseException("Bad request to YouTube API", exception);
+            LOGGER.info(StringConstants.BAD_REQUEST_YOUTUBE, exception);
+            throw new ResponseException(StringConstants.BAD_REQUEST_YOUTUBE, exception);
         }
         return youTubeResponse;
     }
