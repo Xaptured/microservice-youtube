@@ -15,7 +15,7 @@ public final class PropertiesReader {
 
     private static final Properties PROPERTIES;
 
-    private static final String PROP_FILE = "keys_dummy.properties";
+    private static final String PROP_FILE = "keys.properties";
 
     private PropertiesReader() {
     }
