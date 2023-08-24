@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "get-youtube-video-details", url = "https://youtube.googleapis.com/youtube")
+@FeignClient(name = "GOOGLE-API-SERVICE", url = "https://youtube.googleapis.com/youtube")
 public interface YouTubeClient {
 
     @GetMapping(value = "/v3/search")
