@@ -12,6 +12,8 @@ public class StringConstants {
     public static final String BAD_REQUEST_YOUTUBE = "Bad request to YouTube API";
     public static final String VIDEO_ID_NULL = "VideoId is null in response";
     public static final String THUMBNAIL_URL_NULL = "Thumbnail URL is null in response";
+    public static final String FALLBACK_MESSAGE = "Something went wrong. Please try again later";
+    public static final String RETRY_MESSAGE = "Something went wrong. Doing retry...";
 
     private StringConstants(){}
 }
