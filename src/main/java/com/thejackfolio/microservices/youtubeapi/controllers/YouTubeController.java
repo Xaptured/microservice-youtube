@@ -34,7 +34,6 @@ public class YouTubeController {
     )
     @GetMapping("/get-videos")
     @Retry(name = "get-videos-retry", fallbackMethod = "getVideosRetry")
-    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<YouTubeResponseWrapper> getVideoDetails(){
         YouTubeResponseWrapper wrapper = null;
         try{
