@@ -24,7 +24,7 @@ public class IncomingValidation {
                     LOGGER.info("VideoId is null in response item:{}", item);
                     throw new VideoIdException(StringConstants.VIDEO_ID_NULL);
                 }
-                if(Strings.isEmpty(item.getSnippet().getThumbnails().getHigh().getUrl()) || Strings.isBlank(item.getSnippet().getThumbnails().getHigh().getUrl())){
+                if(Strings.isEmpty(item.getSnippet().getThumbnails().getMedium().getUrl()) || Strings.isBlank(item.getSnippet().getThumbnails().getMedium().getUrl())){
                     LOGGER.info("Thumbnail URL is null in response item:{}", item);
                     throw new ThumbnailUrlException(StringConstants.THUMBNAIL_URL_NULL);
                 }
