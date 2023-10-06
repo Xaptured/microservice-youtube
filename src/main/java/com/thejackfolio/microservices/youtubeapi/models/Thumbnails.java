@@ -1,13 +1,13 @@
 package com.thejackfolio.microservices.youtubeapi.models;
 
 public class Thumbnails {
-    private High high;
+    private Medium medium;
 
-    public High getHigh() {
-        return high;
+    public Medium getMedium() {
+        return medium;
     }
 
-    public void setHigh(High high) {
-        this.high = high;
+    public void setMedium(Medium medium) {
+        this.medium = medium;
     }
 }
