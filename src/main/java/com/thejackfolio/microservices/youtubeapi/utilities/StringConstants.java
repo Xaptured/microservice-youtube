@@ -19,5 +19,8 @@ public class StringConstants {
     public static final String PASSWORD = "PASSWORD";
     public static final String ROLE = "ROLE";
 
+    public static final String MAPPING_ERROR = "Error occurred while mapping";
+    public static final String DATABASE_ERROR = "Error occurred while database operation";
+
     private StringConstants(){}
 }

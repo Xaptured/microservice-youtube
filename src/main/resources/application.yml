@@ -16,3 +16,6 @@ resilience4j:
       get-videos-retry:
         max-attempts: 3
         wait-duration: 5s
+      get-news-videos-retry:
+        max-attempts: 3
+        wait-duration: 5s
