@@ -67,9 +67,9 @@ public class YouTubeServiceHelper {
             for(InterestedGame game : interestedGames) {
                 String gameName = game.getGameName();
                 if(intGamesReqParams == null) {
-                    intGamesReqParams = gameName + "news";
+                    intGamesReqParams = gameName + " news";
                 } else {
-                    intGamesReqParams = interestedGames + " %7C " + gameName + "news";
+                    intGamesReqParams = intGamesReqParams + " %7C " + gameName + " news";
                 }
             }
         } else {
