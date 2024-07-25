@@ -20,10 +20,10 @@ public class IncomingValidation {
     public void validateYouTubeResponse(YouTubeResponse youTubeResponse) throws VideoIdException, ThumbnailUrlException {
         if(youTubeResponse != null && youTubeResponse.getItems() != null && !youTubeResponse.getItems().isEmpty()){
             for(Item item : youTubeResponse.getItems()){
-                if(Strings.isEmpty(item.getId().getVideoId()) || Strings.isBlank(item.getId().getVideoId())){
-                    LOGGER.info("VideoId is null in response item:{}", item);
-                    throw new VideoIdException(StringConstants.VIDEO_ID_NULL);
-                }
+//                if(Strings.isEmpty(item.getId().getVideoId()) || Strings.isBlank(item.getId().getVideoId())){
+//                    LOGGER.info("VideoId is null in response item:{}", item);
+//                    throw new VideoIdException(StringConstants.VIDEO_ID_NULL);
+//                }
                 if(Strings.isEmpty(item.getSnippet().getThumbnails().getMedium().getUrl()) || Strings.isBlank(item.getSnippet().getThumbnails().getMedium().getUrl())){
                     LOGGER.info("Thumbnail URL is null in response item:{}", item);
                     throw new ThumbnailUrlException(StringConstants.THUMBNAIL_URL_NULL);
