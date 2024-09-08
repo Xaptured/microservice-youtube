@@ -1,3 +1,7 @@
+[![Build and Test Java Spring Boot Application](https://github.com/Xaptured/microservice-youtube/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/Xaptured/microservice-youtube/actions/workflows/build-and-test.yml)
+
+[![Dependabot Updates](https://github.com/Xaptured/microservice-youtube/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Xaptured/microservice-youtube/actions/workflows/dependabot/dependabot-updates)
+
 # microservice-youtube
 
 This microservice is used as a layer above the YouTube APIs which can do operations related to channel data, media information etc. 
